@@ -1,12 +1,17 @@
-import React from "react";
+import { React, useState } from "react";
 import { easeInOut, easeOut, motion } from "framer-motion";
 import { useScroll } from "framer-motion";
 import { styles } from "../styles";
 import { useInView } from "react-intersection-observer";
-import contactIcon from '../assets/contactIcon.png';
+import contactIcon from "../assets/contactIcon.png";
+import ReactCardFlip from "react-card-flip";
+import expbadge from "../assets/expbadge.png"
+import filedownloadicon from "../assets/filedownloadicon.png"
+import projectlogo from "../assets/projectlogo.png"
 
 
 const About = () => {
+  
   const isMobile = window.innerWidth <= 768;
   const [ref, inView] = useInView({
     triggerOnce: true, // Ensures the animation runs once when the element enters the viewport
@@ -14,60 +19,141 @@ const About = () => {
   const [ref2, inView2] = useInView({
     triggerOnce: true, // Ensures the animation runs once when the element enters the viewport
   });
+
+  let infoarr = [{}];
   return (
     <>
-    <div className={isMobile?"p-5 bg-bgcolor":"p-0"}></div>
-    
-      <div className={`md:px-[95px] sm:px-[50px] bg-bgcolor`}>
-      <motion.h1
-        className={`${styles.heroHeadText}text-white mb-3 font-Montserrat`}
-      >
-        Overview
-      </motion.h1>
+      {/* <div className={isMobile?"p-5 bg-bgcolor":"p-0"}></div> */}
 
-      <div className=" overflow-x-hidden">
-      <motion.p
-        initial={{ x: -500 }}
-        whileInView={{ x: inView ? 0 : -500 }}
-        transition={{ delay: 0.3, duration: 1.6 }}
-        ref={ref}
-        className="leading-7 pb-3 font-Montserrat "
-      >
-        Hi, I'm Manya, your friendly neighborhood coder! 🌟<br></br>
-        By day, I'm a diligent B.Tech student, delving into the magical realm of
-        Computer Science.🧙‍♂️ <br></br>
-        But by night, I transform into a ReactJS/Frontend sorcerer, weaving
-        spells in the world of web development. 💻✨
-      </motion.p>
-      <motion.p
-        initial={{ x: 400 }}
-        whileInView={{ x: inView2 ? -10 : 400 }}
-        transition={{ delay: 0.3, duration: 1.3 }}
-        ref={ref2}
-        className="leading-7 text-right pb-3 whitespace-pre-line font-Montserrat "
-      >
-        My dream? To become a MERN Stack Developer extraordinaire! I'm all about
-        crafting eye-catching,<br></br>
-        user-friendly web applications and solving problems🚀💻Bugs, you're in for
-        a treat!<br></br>
-       
-      </motion.p>
+      <div className={`md:px-[95px] sm:px-[50px]`}>
+        <motion.h1
+          className={`${styles.heroHeadText}text-white mb-3 font-Montserrat`}
+        >
+          Overview
+        </motion.h1>
 
+        {/* column 1 */}
+        <div className=" overflow-x-hidden flex flex-row gap-20 items-center">
+          <div className="flex w-[40%]">
+            <motion.p
+              initial={{ x: -500 }}
+              whileInView={{ x: inView ? 0 : -500 }}
+              transition={{ delay: 0.3, duration: 1.6 }}
+              ref={ref}
+              className="leading-7 pb-3 font-Montserrat "
+            >
+              Hi, I'm Manya, your friendly neighborhood coder! 🌟 I'm a college
+              student pursuing B.Tech in Computer Science. By day, I'm a
+              diligent B.Tech student, delving into the magical realm of
+              Computer Science.🧙‍♂️ But by night, I transform into a
+              ReactJS/Frontend sorcerer, weaving spells in the world of web
+              development. 💻✨ I throw in a pinch of DSA practice to level up
+              my coding skills – it's like a quick workout for the brain!
+              Alongside, I'm an AWS learner, exploring cloud computing
+              technologies to complement my web development expertise. I'm on a
+              mission to MERN mastery! Cooking up code with MongoDB, Express,
+              React, and Node.js – my dream stack is more than just letters,sdflkjdsl
+            </motion.p>
+          </div>
+
+          {/* column 2 */}
+          <motion.div
+            
+            className="leading-7 text-right pb-3 whitespace-pre-line font-Montserrat "
+          >
+            <div className="flex flex-row items-center gap-6">
+
+              {/* flipping cards below */}
+
+              {/* experience card */}
+              <motion.div id="card"
+              initial={{ rotate:-20 }}
+              whileInView={{rotate:0 }}
+              transition={{ delay: 0.1, duration: 0.7 }}
+              ref={ref2}
+                style={{
+                  border: "3px solid white",
+                  borderRadius: "8px", // rounded-lg equivalent
+                  background: "#5064C6",
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "14rem", // w-14 equivalent
+                  height: "250px",
+                  transition: 'transform 0.8s',
+                }}
+              >
+                <div className=" flex flex-col gap-2 items-center mt-10 filter fill-transparent ">
+                  <img src={expbadge}></img>
+                  <h2 className="font-mono text-2xl font-semibold">Experience</h2>
+                  <p className="  font-Montserrat  text-lg text-white text-center font-semibold">2 years</p>
+                </div>
+              </motion.div>
+
+              {/* projects card */}
+              <motion.div id="card"
+              initial={{ rotate:-20 }}
+              whileInView={{rotate:0 }}
+              transition={{ delay: 0.1, duration: 0.7 }}
+              ref={ref2}
+                style={{
+                  border: "3px solid white",
+                  borderRadius: "8px", // rounded-lg equivalent
+                  background: "#5064C6",
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "14rem", // w-14 equivalent
+                  height: "250px",
+                  transition: 'transform 0.8s',
+                }}
+              >
+                <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 ">
+                  <img className="w-10" src={projectlogo}></img>
+                  <h2 className="font-mono text-2xl font-semibold">Projects</h2>
+                  <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6">Engaged in <span className="text-blue-900 font-bold text-[16px]"> 10 </span> projects<br></br>Successfully completed <span className="text-blue-900 font-bold text-[16px]"> 6 </span>  of them!</p>
+                  
+                </div>
+              </motion.div>
+
+              {/* resume download card */}
+              <motion.div id="card"
+              initial={{ rotate:-20 }}
+              whileInView={{rotate:0 }}
+              transition={{ delay: 0.1, duration: 0.7 }}
+              ref={ref2}
+                style={{
+                  border: "3px solid white",
+                  borderRadius: "8px", // rounded-lg equivalent
+                  background: "#5064C6",
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "14rem", // w-14 equivalent
+                  height: "250px",
+                  transition: 'transform 0.8s',
+                }}
+              >
+                <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 ">
+                  <img className="w-10" src={filedownloadicon}></img>
+                  <h2 className="font-mono text-2xl font-semibold">Download CV</h2>
+                  {/* <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6"></p> */}
+                  
+                </div>
+              </motion.div>
+              
+
+            </div>
+          </motion.div>
+        </div>
+
+        <br></br>
+        <motion.button
+          className="px-7 py-4 flex select-none items-center gap-1 rounded-lg bg-gradient-to-tr from-purple-800 to-cyan-400  text-center align-middle font-sans text-[15px] font-bold uppercase text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
+          type="button"
+          data-ripple-light="true"
+          whileHover={{ scale: 1.1 }}
+        >
+          Let's Connect!
+        </motion.button>
       </div>
-
-      
-      <br></br>
-      <motion.button
-        className="px-7 py-4 flex select-none items-center gap-1 rounded-lg bg-gradient-to-tr from-purple-800 to-cyan-400  text-center align-middle font-sans text-[15px] font-bold uppercase text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
-        type="button"
-        data-ripple-light="true"
-        whileHover={{scale:1.1}}
-
-      >
-       Let's Connect!
-      </motion.button>
-      </div>
-      
     </>
   );
 };

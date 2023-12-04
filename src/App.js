@@ -24,12 +24,14 @@ function App() {
           <div className="bg-hero-pattern bg-cover bg-repeat bg-center">
             <Navbar></Navbar>
             <Hero></Hero>
+            
           </div>
-          <div className="relative z-0">
+          <div className="relative z-0 bg-bgcolor">
             <About></About>
-            {/* <Experience></Experience>
             <Tech></Tech>
+            {/* <Experience></Experience>
             <Works></Works>*/}
+            
             <Feedbacks></Feedbacks> 
           </div>
 
