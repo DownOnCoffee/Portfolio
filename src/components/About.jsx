@@ -8,6 +8,7 @@ import ReactCardFlip from "react-card-flip";
 import expbadge from "../assets/expbadge.png"
 import filedownloadicon from "../assets/filedownloadicon.png"
 import projectlogo from "../assets/projectlogo.png"
+// import resumefile from ".././public/resume.pdf";
 
 
 const About = () => {
@@ -20,7 +21,18 @@ const About = () => {
     triggerOnce: true, // Ensures the animation runs once when the element enters the viewport
   });
 
-  let infoarr = [{}];
+  const handledownload=()=>{
+    
+    const resumePath = process.env.PUBLIC_URL + '/resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumePath;
+    link.download = 'ManyaRaghuvanshi_Frontenddeveloper_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+  }
+
   return (
     <>
       {/* <div className={isMobile?"p-5 bg-bgcolor":"p-0"}></div> */}
@@ -36,6 +48,7 @@ const About = () => {
         <div className=" overflow-x-hidden flex flex-row gap-20 items-center">
           <div className="flex w-[40%]">
             <motion.p
+            
               initial={{ x: -500 }}
               whileInView={{ x: inView ? 0 : -500 }}
               transition={{ delay: 0.3, duration: 1.6 }}
@@ -48,11 +61,11 @@ const About = () => {
               Computer Science.🧙‍♂️ But by night, I transform into a
               ReactJS/Frontend sorcerer, weaving spells in the world of web
               development. 💻✨ I throw in a pinch of DSA practice to level up
-              my coding skills – it's like a quick workout for the brain!
+              my coding skills.
               Alongside, I'm an AWS learner, exploring cloud computing
               technologies to complement my web development expertise. I'm on a
               mission to MERN mastery! Cooking up code with MongoDB, Express,
-              React, and Node.js – my dream stack is more than just letters,sdflkjdsl
+              React, and Node.js – my dream stack is more than just letters!
             </motion.p>
           </div>
 
@@ -69,7 +82,7 @@ const About = () => {
               <motion.div id="card"
               initial={{ rotate:-20 }}
               whileInView={{rotate:0 }}
-              transition={{ delay: 0.1, duration: 0.7 }}
+              transition={{ delay: 0, duration: 0.7 }}
               ref={ref2}
                 style={{
                   border: "3px solid white",
@@ -85,7 +98,7 @@ const About = () => {
                 <div className=" flex flex-col gap-2 items-center mt-10 filter fill-transparent ">
                   <img src={expbadge}></img>
                   <h2 className="font-mono text-2xl font-semibold">Experience</h2>
-                  <p className="  font-Montserrat  text-lg text-white text-center font-semibold">2 years</p>
+                  <p className="  font-Montserrat  text-lg text-white text-center font-semibold">1.5 years</p>
                 </div>
               </motion.div>
 
@@ -93,7 +106,7 @@ const About = () => {
               <motion.div id="card"
               initial={{ rotate:-20 }}
               whileInView={{rotate:0 }}
-              transition={{ delay: 0.1, duration: 0.7 }}
+              transition={{ delay: 0, duration: 0.7 }}
               ref={ref2}
                 style={{
                   border: "3px solid white",
@@ -109,7 +122,7 @@ const About = () => {
                 <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 ">
                   <img className="w-10" src={projectlogo}></img>
                   <h2 className="font-mono text-2xl font-semibold">Projects</h2>
-                  <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6">Engaged in <span className="text-blue-900 font-bold text-[16px]"> 10 </span> projects<br></br>Successfully completed <span className="text-blue-900 font-bold text-[16px]"> 6 </span>  of them!</p>
+                  <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6">Engaged in <span className="text-blue-900 font-bold text-[16px]"> 10 </span> projects<br></br>Successfully completed <span className="text-blue-900 font-bold text-[16px]"> 7 </span>  of them!</p>
                   
                 </div>
               </motion.div>
@@ -118,7 +131,8 @@ const About = () => {
               <motion.div id="card"
               initial={{ rotate:-20 }}
               whileInView={{rotate:0 }}
-              transition={{ delay: 0.1, duration: 0.7 }}
+              transition={{ delay: 0, duration: 0.7 }}
+              className="hover:cursor-pointer hover:border-black"
               ref={ref2}
                 style={{
                   border: "3px solid white",
@@ -129,9 +143,10 @@ const About = () => {
                   width: "14rem", // w-14 equivalent
                   height: "250px",
                   transition: 'transform 0.8s',
+
                 }}
               >
-                <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 ">
+                <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 " onClick={handledownload}>
                   <img className="w-10" src={filedownloadicon}></img>
                   <h2 className="font-mono text-2xl font-semibold">Download CV</h2>
                   {/* <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6"></p> */}

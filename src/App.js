@@ -29,8 +29,9 @@ function App() {
           <div className="relative z-0 bg-bgcolor">
             <About></About>
             <Tech></Tech>
-            {/* <Experience></Experience>
-            <Works></Works>*/}
+            <Experience></Experience>
+            
+            {/* <Works></Works> */}
             
             <Feedbacks></Feedbacks> 
           </div>
