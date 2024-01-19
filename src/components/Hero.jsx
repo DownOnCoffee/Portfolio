@@ -38,13 +38,13 @@ const Hero = () => {
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "Glad to have you here ;)",
+                "Glad to have you here ;) ",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "I am a future full stack developer",
+                "I am a Computer science student  ",
                 1000,
-                "I am an AWS Cloud Learner",
+                "And a Frontend React developer!",
                 1000,
-                "I am a for Chinchillas",
+                "Thanks for dropping by!",
                 1000,
               ]}
               className={`${styles.heroSubText}`}
