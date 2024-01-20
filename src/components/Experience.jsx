@@ -20,7 +20,7 @@ const Experience = () => {
     const projlistitems1=["Developed an IP Address Tracker","Participated in Smart India hackathon and bagged the 3rd position at college level.","Developed Innergram - A social media analysis tool","Engaged in many more react projects"];
     const projlistitems2=["Developed interfaces for multiple projects","Contributed to the development of a dynamic land rental website - Patched and accumulated industrial experience "];
     const projlistitems3=["Engaged in an online frontend developer internship at Collcom ","Collaborated with a non-profit organization to develop a website for their Cybersecurity awareness campaign."];
-    const projlistitems4=["Developed interfaces for multiple projects","Contributed to the development of a dynamic land rental website - Patched and accumulated industrial experience "];
+    const projlistitems4=["Completed comprehensive training in HTML, CSS, and JavaScript by completing certifications."," acquiring essential skills for developing modern and responsive websites."];
     
 
   return (
@@ -132,6 +132,40 @@ const Experience = () => {
                 </ul>
               </motion.div>
             </div>
+
+
+
+            {/* fourth exp div */}
+            <div className="flex items-baseline mb-40">
+              <motion.div
+                className="font-italic whitespace-nowrap"
+                whileInView={{
+                  x: inView ? 50 : 0,
+                  opacity: inView ? 1 : 0,
+                }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                ref={ref}
+                initial={{ x: 0, opacity: 0 }}
+              >
+                2022 - 2023
+              </motion.div>
+              <motion.div
+                className={expcardstyleleft}
+                ref={ref}
+                whileInView={{ x: inView ? -530 : -700 }}
+                initial={{ x: -700 }}
+                transition={{ delay: 0.1, duration: 0.9 }}
+              >
+                <p className="font-bold">Web Development Foundations Training</p>
+               
+                <ul style={{ listStyle: 'disc' }}>
+                {projlistitems4.map((item)=>(
+                  <li>{item}</li>
+                ))}
+                </ul>
+              </motion.div>
+            </div>
+
            
 
           </div>

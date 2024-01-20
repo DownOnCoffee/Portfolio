@@ -27,7 +27,11 @@ function App() {
             
           </div>
           <div className="relative z-0 bg-bgcolor">
-            <About></About>
+            <div id="about">
+              <About></About>
+
+            </div>
+           
             <Tech></Tech>
             <Experience></Experience>
             

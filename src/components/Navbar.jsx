@@ -19,8 +19,6 @@ const Navbar = () => {
   // const imageXPosition = useTransform(scrollYProgress, [0, 1], [0,1500]); 
   const [Active, setActive] = useState("initail");
   const [Toggle, setToggle] = useState(false);
-  
-  console.log(Active);
   return (
     <>
     {/*X scroll at the top of page*/}
@@ -55,6 +53,7 @@ const Navbar = () => {
               Manya | <span>Portfolio</span>
             </p>
           </Link>
+          {/* Active state is being used for styling and toggle between white and grey color on click */}
           <ul className="list-none sm:hidden md:flex flex-row gap-11 ">
             {navLinks.map((link) => (
               <li
@@ -66,7 +65,7 @@ const Navbar = () => {
                   setActive(link.title);
                 }}
               >
-                <NavLink to={link.id}>{link.title}</NavLink>
+                <Link to={link.id}>{link.title}</Link>
               </li>
             ))}
           </ul>
