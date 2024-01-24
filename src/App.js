@@ -34,9 +34,7 @@ function App() {
            
             <Tech></Tech>
             <Experience></Experience>
-            
-            {/* <Works></Works> */}
-            
+            <Works></Works>
             <Feedbacks></Feedbacks> 
           </div>
 

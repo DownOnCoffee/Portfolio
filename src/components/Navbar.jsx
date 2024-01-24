@@ -63,6 +63,7 @@ const Navbar = () => {
                 } text-[17.5px] cursor-pointer  hover:text-[18px] hover:text-gray-400 `}
                 onClick={() => {
                   setActive(link.title);
+                  window.scrollTo()
                 }}
               >
                 <Link to={link.id}>{link.title}</Link>
