@@ -48,7 +48,7 @@ const Experience = () => {
     "flex-shrink-0 border-b-4 border-l-4 bg-gray-900 p-7 w-[400px]  rounded-xl leading-6";
 
     const projlistitems1=["Developed an IP Address Tracker","Participated in Smart India hackathon and bagged the 3rd position at college level.","Developed Innergram - A social media analysis tool","Engaged in many more react projects"];
-    const projlistitems2=["Developed interfaces for multiple projects","Contributed to the development of a dynamic land rental website - Patched and accumulated industrial experience "];
+    const projlistitems2=["Contributed to the development of a dynamic land rental website - Patched","Developed user module with React, including authentication and registration flows managed by Axios API calls.","Implemented interactive landing page in React, fetching data for content display.","Built robust form validation with custom error handling, integrating OTP verification","Developed interfaces for multiple projects using HTML,CSS, Javascript which has improved my design principles."];
     const projlistitems3=["Engaged in an online frontend developer internship at Collcom ","Collaborated with a non-profit organization to develop a website for their Cybersecurity awareness campaign."];
     const projlistitems4=["Completed comprehensive training in HTML, CSS, and JavaScript by completing certifications."," acquiring essential skills for developing modern and responsive websites."];
 
@@ -67,10 +67,10 @@ const Experience = () => {
           <br></br>
 
           {/* vertical white line */}
-          <div className="h-[1500px] w-3 bg-white">
+          <div className="h-[1800px] w-3 bg-white">
             <div className="flex items-baseline mb-40 ">
               <motion.div
-                className="font-italic whitespace-nowrap "
+                className="font-italic whitespace-nowrap text-white "
                 whileInView={{
                   x: inView1 ? -250 : -180,
                   opacity: inView1 ? 1 : 0,
@@ -88,12 +88,12 @@ const Experience = () => {
                 initial={{ x: 0 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
-                <p className="font-bold">Personal React Projects:</p>
-                Sharpening my React skills through hands-on personal projects and enhancing my proficiency in web development.
+                <p className="font-bold text-white ">Personal React Projects:</p>
+               <p className="text-white"> Sharpening my React skills through hands-on personal projects and enhancing my proficiency in web development.</p>
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems1.map((item)=>(
-                  <li>{item}</li>
+                  <li className="text-white">{item}</li>
                 ))}
                 </ul>
               </motion.div>
@@ -103,7 +103,7 @@ const Experience = () => {
             {/* second exp div */}
             <div className="flex items-baseline mb-40">
               <motion.div
-                className="font-italic whitespace-nowrap"
+                className="font-italic text-white whitespace-nowrap"
                 whileInView={{
                   x: inView2 ? 50 : 0,
                   opacity: inView2 ? 1 : 0,
@@ -121,12 +121,12 @@ const Experience = () => {
                 initial={{ x: -700 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
-                <p className="font-bold">React  Developer Intern:</p>
-                Triazine Software Pvt Ltd<br></br>
+                <p className="font-bold text-white">React  Developer Intern:</p>
+                <p className="text-white">Triazine Software Pvt Ltd</p><br></br>
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems2.map((item)=>(
-                  <li>{item}</li>
+                  <li className="text-white">{item}</li>
                 ))}
                 </ul>
               </motion.div>
@@ -137,7 +137,7 @@ const Experience = () => {
             {/* third exp div */}
             <div className="flex items-baseline mb-40 ">
               <motion.div
-                className="font-italic whitespace-nowrap "
+                className="font-italic text-white whitespace-nowrap "
                 whileInView={{
                   x: inView3 ? -180 : -150,
                   opacity: inView3 ? 1 : 0,
@@ -155,11 +155,11 @@ const Experience = () => {
                 initial={{ x: 0 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
-                <p className="font-bold">Frontend developer:</p>
+                <p className="font-bold text-white">Frontend developer:</p>
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems3.map((item)=>(
-                  <li>{item}</li>
+                  <li className="text-white">{item}</li>
                 ))}
                 </ul>
               </motion.div>
@@ -170,7 +170,7 @@ const Experience = () => {
             {/* fourth exp div */}
             <div className="flex items-baseline mb-40">
               <motion.div
-                className="font-italic whitespace-nowrap"
+                className="font-italic text-white whitespace-nowrap"
                 whileInView={{
                   x: inView4 ? 50 : 0,
                   opacity: inView4 ? 1 : 0,
@@ -182,17 +182,17 @@ const Experience = () => {
                 2022 - 2023
               </motion.div>
               <motion.div
-                className={expcardstyleleft}
+                className={expcardstyleleft }
                 ref={ref4}
                 whileInView={{ x: inView4 ? -530 : -700 }}
                 initial={{ x: -700 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
-                <p className="font-bold">Web Development Foundations Training</p>
+                <p className="font-bold text-white">Web Development Foundations Training</p>
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems4.map((item)=>(
-                  <li>{item}</li>
+                  <li className="text-white">{item}</li>
                 ))}
                 </ul>
               </motion.div>

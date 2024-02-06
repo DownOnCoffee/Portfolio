@@ -12,6 +12,7 @@ import {
   canvas,
 } from "./components";
 import "./App.css";
+import {NextUIProvider} from "@nextui-org/react";
 // import './index.css';
 
 import { styles } from "./styles";
@@ -19,6 +20,7 @@ import { styles } from "./styles";
 function App() {
   return (
     <>
+   
       <BrowserRouter>
         <div className="relative z-0 ">
           <div className="bg-hero-pattern bg-cover bg-repeat bg-center">
@@ -34,7 +36,9 @@ function App() {
            
             <Tech></Tech>
             <Experience></Experience>
+            <NextUIProvider>
             <Works></Works>
+            </NextUIProvider>
             <Feedbacks></Feedbacks> 
           </div>
 
@@ -44,6 +48,7 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
+      
     </>
   );
 }

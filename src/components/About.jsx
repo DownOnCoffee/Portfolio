@@ -53,7 +53,7 @@ const About = () => {
               whileInView={{ x: inView ? 0 : -500 }}
               transition={{ delay: 0.3, duration: 1.6 }}
               ref={ref}
-              className="leading-7 pb-3 font-Montserrat "
+              className=" text-white leading-7 pb-3 font-Montserrat "
             >
               Hi, I'm Manya, your friendly neighborhood coder! 🌟 I'm a college
               student pursuing B.Tech in Computer Science. By day, I'm a
@@ -97,8 +97,8 @@ const About = () => {
               >
                 <div className=" flex flex-col gap-2 items-center mt-10 filter fill-transparent ">
                   <img src={expbadge}></img>
-                  <h2 className="font-mono text-2xl font-semibold">Experience</h2>
-                  <p className="  font-Montserrat  text-lg text-white text-center font-semibold">1.5 years</p>
+                  <h2 className=" text-white font-mono text-2xl font-semibold">Experience</h2>
+                  <p className="  font-Montserrat text-lg text-white text-center font-semibold">1.5 years</p>
                 </div>
               </motion.div>
 
@@ -121,7 +121,7 @@ const About = () => {
               >
                 <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 ">
                   <img className="w-10" src={projectlogo}></img>
-                  <h2 className="font-mono text-2xl font-semibold">Projects</h2>
+                  <h2 className="font-mono text-2xl font-semibold text-white ">Projects</h2>
                   <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6">Engaged in <span className="text-blue-900 font-bold text-[16px]"> 10 </span> projects<br></br>Successfully completed <span className="text-blue-900 font-bold text-[16px]"> 7 </span>  of them!</p>
                   
                 </div>
@@ -148,7 +148,7 @@ const About = () => {
               >
                 <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 " onClick={handledownload}>
                   <img className="w-10" src={filedownloadicon}></img>
-                  <h2 className="font-mono text-2xl font-semibold">Download CV</h2>
+                  <h2 className="font-mono text-2xl text-white  font-semibold">Download CV</h2>
                   {/* <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6"></p> */}
                   
                 </div>
