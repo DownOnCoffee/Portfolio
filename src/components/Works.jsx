@@ -9,6 +9,7 @@ import { useInView } from "react-intersection-observer";
 import { easeInOut, easeOut } from "framer-motion";
 import mainlogo from "../assets/m-logo3.png";
 import { Input } from "@nextui-org/react";
+import { ExternalLink } from 'react-external-link';
 
 import { ListboxSection } from "@nextui-org/react";
 import {
@@ -24,55 +25,67 @@ import { Zoom } from "react-toastify";
 const Works = () => {
   const { scrollYProgress } = useScroll();
 
-  const imgarray = [
-    "/images/jj1.png",
-    "/images/patched.png",
-    "/images/innergramss.png",
-    "/images/ipadd.png",
-    "/images/collcomss.png",
-    "/images/myntraclone.png",
-    "/images/tictactoe.png",
-  ];
+  // const imgarray = [
+  //   "/images/jj1.png",
+  //   "/images/patched.png",
+  //   "/images/innergramss.png",
+  //   "/images/ipadd.png",
+  //   "/images/collcomss.png",
+  //   "/images/myntraclone.png",
+  //   "/images/tictactoe.png",
+  // ];
   const list = [
     {
       title: "Patched",
       img: "images/patched.png",
       techstack: "ReactJs , CSS , Axios API , Material UI ",
-    },
-    {
-      title: "CollCom ",
-      img: "/images/collcomss.png",
-      techstack: "Javascript , HTML , Tailwind",
-    },
-    {
-      title: "IP Address tracker",
-      img: "/images/ipadd.png",
-      techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind  ",
+      link:"https://dev.patched.tech/"
     },
     {
       title: "Innergram",
       img: "/images/innergramss.png",
       techstack: "Typescript , DSA , ReactJs, NextUI , Tailwind ",
+      link:"https://innergram.vercel.app/"
     },
+    
+    {
+      title: "IP Address tracker",
+      img: "/images/ipadd.png",
+      techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind  ",
+      link:"https://ipaddtracker.vercel.app/"
+    },
+    {
+      title: "CollCom ",
+      img: "/images/collcomss.png",
+      techstack: "Javascript , HTML , Tailwind",
+      link:""
+    },
+   
     {
       title: "Myntra Clone (HomePage)",
       img: "/images/myntraclone.png",
       techstack: "HTML , Tailwind , Javascript ",
+      likn:"https://github.com/DownOnCoffee/myntraClone"
     },
     {
       title: "Digital Adhivakta",
       img: "/images/jj1.png",
       techstack: "NextJs , Tailwind , NextUI ",
+      link:"https://youtu.be/ksM58tGsaIw?si=vcphKefEgu_Zfgp1"
     },
+    
     {
       title: "Advice Generator App",
       img: "/images/advicess.png",
       techstack: "ReactJs , Tailwind , Axios API",
+      link:"https://adviceforu.vercel.app/"
+
     },
     {
       title: "TicTacToe",
       img: "/images/tictactoe.png",
       techstack: "ReactJs , CSS ",
+      link:"https://tictactoe-two-tau.vercel.app/"
     },
   ];
 
@@ -101,7 +114,7 @@ const Works = () => {
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
           <path
-            fill="#ffffff"
+            fill="#050816"
             fill-opacity="1.0"
             d="M0,96L40,117.3C80,139,160,181,240,192C320,203,400,181,480,154.7C560,128,640,96,720,106.7C800,117,880,171,960,176C1040,181,1120,139,1200,117.3C1280,96,1360,96,1400,96L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
           ></path>
@@ -110,7 +123,7 @@ const Works = () => {
       </div>
       
 
-      <motion.div className="bg-[#ffffff]">
+      <motion.div className="bg-[#050816]">
         <div className="gap-4 grid grid-cols-2 sm:grid-cols-3 px-5">
           {list.map((item, index) => (
             <motion.div
@@ -121,8 +134,11 @@ const Works = () => {
               transition={{ duration: 0.4, easeInOut, delay: index / 5 }}
               className="max-w-[470px]"
             >
+              <Link to ={item.link}>
+              
               <Card
                 className=""
+               
                 shadow="md"
                 key={index}
                 isPressable
@@ -149,6 +165,8 @@ const Works = () => {
                   <small className="text-default-500">{item.techstack}</small>
                 </CardFooter>
               </Card>
+              </Link>
+             
             </motion.div>
           ))}
         </div>
