@@ -56,9 +56,11 @@ const About = () => {
               className=" text-white leading-7 pb-3 font-Montserrat "
             >
               Hi, I'm Manya, your friendly neighborhood coder! 🌟 I'm a college
-              student pursuing B.Tech in Computer Science, spending my days diving into algorithms and data structures. At night, I switch to work on ReactJS and Frontend development and learning the ins and outs of the MERN stack, cooking up code with MongoDB, Express, React, and Node.js for backend projects - my dream stack is more than just letters!🌟.<br></br> Seamlessly merging software development principles with web design, I eagerly explore the diverse landscape of programming.💻🌟
+              student pursuing B.Tech in Computer Science, spending my days diving into algorithms and data structures. At night, I switch to work on ReactJS and Frontend development and learning the ins and outs of the MERN stack, cooking up code with MongoDB, Express, React, and Node.js for backend projects - my dream stack is more than just letters!🌟.<br></br>
               Alongside, I'm an AWS learner, exploring cloud computing
-              technologies to complement my web development expertise.
+              technologies to complement my web development expertise. 
+              Seamlessly merging software development principles with web design, I eagerly explore the diverse landscape of programming.💻🌟
+              I'm on the lookout for frontend and software development roles to make my mark in the digital cosmos!
             </motion.p>
           </div>
 
@@ -156,7 +158,7 @@ const About = () => {
         <motion.button
           className="px-7 py-4 flex select-none items-center gap-1 rounded-lg bg-gradient-to-tr from-purple-800 to-cyan-400  text-center align-middle font-sans text-[15px] font-bold uppercase text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
           type="button"
-          onClick={()=>{window.scrollTo(0,4750)}}
+          onClick={()=>{window.scrollTo(0,4800)}}
           data-ripple-light="true"
           whileHover={{ scale: 1.1 }}
         >
