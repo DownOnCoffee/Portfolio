@@ -29,14 +29,20 @@ import {
     {
       id: "about",
       title: "About",
+      horzscroll:"0",
+      vertscroll:"550"
     },
     {
       id: "work",
       title: "Work",
+      horzscroll:"0",
+      vertscroll:"3120"
     },
     {
       id: "contact",
       title: "Contact",
+      horzscroll:"0",
+      vertscroll:"4750"
     },
   ];
   

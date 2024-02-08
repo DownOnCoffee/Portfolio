@@ -46,6 +46,17 @@
   );
 }
 
+/* App.css */
+/* .glow {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 55px #0ff, 0 0 75px #0ff;
+  color: transparent;
+} */
+
+.glow:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(183, 153, 19), 0 0 30px rgb(156, 20, 210), 0 0 40px rgb(170, 21, 228), 0 0 55px #f0f, 0 0 75px rgb(118, 23, 220);
+}
+
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);

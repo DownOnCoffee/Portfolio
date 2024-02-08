@@ -1,39 +1,21 @@
 import React from "react";
 import react, { useEffect, useState } from "react";
-import { useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useScroll, useTransform } from "framer-motion";
-import { styles } from "../styles";
+import { useScroll} from "framer-motion";
+
 import { useInView } from "react-intersection-observer";
 import { easeInOut, easeOut } from "framer-motion";
-import mainlogo from "../assets/m-logo3.png";
-import { Input } from "@nextui-org/react";
-import { ExternalLink } from 'react-external-link';
 
-import { ListboxSection } from "@nextui-org/react";
 import {
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Image,
 } from "@nextui-org/react";
-import { Button } from "@nextui-org/react";
-import { Zoom } from "react-toastify";
 
 const Works = () => {
   const { scrollYProgress } = useScroll();
-
-  // const imgarray = [
-  //   "/images/jj1.png",
-  //   "/images/patched.png",
-  //   "/images/innergramss.png",
-  //   "/images/ipadd.png",
-  //   "/images/collcomss.png",
-  //   "/images/myntraclone.png",
-  //   "/images/tictactoe.png",
-  // ];
   const list = [
     {
       title: "Patched",
@@ -138,7 +120,6 @@ const Works = () => {
               
               <Card
                 className=""
-               
                 shadow="md"
                 key={index}
                 isPressable
@@ -170,13 +151,13 @@ const Works = () => {
             </motion.div>
           ))}
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#050816"
             fill-opacity="1.0"
             d="M0,96L40,117.3C80,139,160,181,240,192C320,203,400,181,480,154.7C560,128,640,96,720,106.7C800,117,880,171,960,176C1040,181,1120,139,1200,117.3C1280,96,1360,96,1400,96L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
           ></path>
-        </svg>
+        </svg> */}
       </motion.div>
     </>
   );

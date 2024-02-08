@@ -13,9 +13,6 @@ import {
 } from "./components";
 import "./App.css";
 import {NextUIProvider} from "@nextui-org/react";
-// import './index.css';
-
-import { styles } from "./styles";
 
 function App() {
   return (
@@ -40,10 +37,11 @@ function App() {
             <Works></Works>
             </NextUIProvider>
             <Feedbacks></Feedbacks> 
+            <Contact></Contact>
           </div>
 
           <div className="relative z-0">
-            {/* <Contact></Contact>
+            {/* 
             <StarsCanvas></StarsCanvas> */}
           </div>
         </div>

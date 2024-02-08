@@ -6,10 +6,9 @@ import { navLinks } from "../constants";
 import mainlogo from "../assets/m-logo3.png";
 import "../index.css";
 import { logo, menu, close } from "../assets";
-
 import {motion } from "framer-motion";
-import { useScroll,useTransform } from "framer-motion";
-import scrollIcon from '../assets/scrollIcon.png';
+import { useScroll } from "framer-motion";
+
 
 
 const Navbar = () => {
@@ -49,7 +48,7 @@ const Navbar = () => {
               alt="logo"
               className="w-[98px] h-[60px] object-container"
             ></img>
-            <p className="cursor-pointer text-[15px]">
+            <p className="cursor-pointer text-[15px] text-white">
               Manya | <span>Portfolio</span>
             </p>
           </Link>
@@ -63,7 +62,8 @@ const Navbar = () => {
                 } text-[17.5px] cursor-pointer  hover:text-[18px] hover:text-gray-400 `}
                 onClick={() => {
                   setActive(link.title);
-                  window.scrollTo()
+                  window.scrollTo(link.horzscroll,link.vertscroll);
+                  
                 }}
               >
                 <Link to={link.id}>{link.title}</Link>
@@ -93,6 +93,8 @@ const Navbar = () => {
                     } hover:text-white font-poppins font-medium cursor-pointer text-[17px]`}
                     onClick={() => {
                       setActive(link.title);
+                      window.scrollTo(link.horzscroll,link.vertscroll);
+                      
                       setToggle(!Toggle);
                     }}
                   >
