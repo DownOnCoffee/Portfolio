@@ -49,9 +49,9 @@ const About = () => {
           <div className="flex w-[40%]">
             <motion.p
             
-              initial={{ x: -500 }}
-              whileInView={{ x: inView ? 0 : -500 }}
-              transition={{ delay: 0.3, duration: 1.6 }}
+              initial={{ x: -250}}
+              whileInView={{ x: inView ? 0 : -250 }}
+              transition={{ delay: 0.3, duration: 1.3 }}
               ref={ref}
               className=" text-white leading-7 pb-3 font-Montserrat "
             >
