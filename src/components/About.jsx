@@ -26,7 +26,7 @@ const About = () => {
     const resumePath = process.env.PUBLIC_URL + '/resume.pdf';
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'ManyaRaghuvanshi_Frontenddeveloper_resume.pdf';
+    link.download = 'ManyaRaghuvanshi_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
