@@ -40,14 +40,15 @@ const Works = () => {
       title: "CollCom ",
       img: "/images/collcomss.png",
       techstack: "Javascript , HTML , Tailwind",
-      link:""
+      link:"https://github.com/DownOnCoffee/collcomfe"
     },
    
     {
       title: "Myntra Clone (HomePage)",
       img: "/images/myntraclone.png",
       techstack: "HTML , Tailwind , Javascript ",
-      likn:"https://github.com/DownOnCoffee/myntraClone"
+      link:"https://github.com/DownOnCoffee/myntraClone"
+    
     },
     {
       title: "Digital Adhivakta",
