@@ -36,12 +36,6 @@ const Works = () => {
       techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind  ",
       link:"https://ipaddtracker.vercel.app/"
     },
-    {
-      title: "CollCom ",
-      img: "/images/collcomss.png",
-      techstack: "Javascript , HTML , Tailwind",
-      link:"https://github.com/DownOnCoffee/collcomfe"
-    },
    
     {
       title: "Myntra Clone (HomePage)",
@@ -55,6 +49,18 @@ const Works = () => {
       img: "/images/jj1.png",
       techstack: "NextJs , Tailwind , NextUI ",
       link:"https://youtu.be/ksM58tGsaIw?si=vcphKefEgu_Zfgp1"
+    },
+    {
+      title: "Scheduly",
+      img: "/images/schedulyss.png",
+      techstack: "ReactJs , Typescript , CSS ",
+      link:"https://to-do-list-sooty-six.vercel.app/"
+    },
+    {
+      title: "CollCom ",
+      img: "/images/collcomss.png",
+      techstack: "Javascript , HTML , Tailwind",
+      link:"https://github.com/DownOnCoffee/collcomfe"
     },
     
     {
