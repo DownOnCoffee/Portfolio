@@ -60,7 +60,7 @@ const Works = () => {
       title: "CollCom ",
       img: "/images/collcomss.png",
       techstack: "Javascript , HTML , Tailwind",
-      link:"https://github.com/DownOnCoffee/collcomfe"
+      link:"https://github.com/DownOnCoffee/Collcom"
     },
     
     {
