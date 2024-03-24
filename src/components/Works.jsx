@@ -30,12 +30,12 @@ const Works = () => {
       link:"https://innergram.vercel.app/"
     },
     
-    {
-      title: "IP Address tracker",
-      img: "/images/ipadd.png",
-      techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind  ",
-      link:"https://ipaddtracker.vercel.app/"
-    },
+    // {
+    //   title: "IP Address tracker",
+    //   img: "/images/ipadd.png",
+    //   techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind  ",
+    //   link:"https://ipaddtracker.vercel.app/"
+    // },
    
     {
       title: "Myntra Clone (HomePage)",
