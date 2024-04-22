@@ -46,7 +46,7 @@ const About = () => {
         </motion.h1>
 
         {/* column 1 */}
-        <div className=" overflow-x-hidden flex lg:flex-row flex-col gap-20 items-center">
+        <div className=" overflow-x-hidden overflow-y-hidden flex lg:flex-row flex-col gap-20 items-center">
           <div className="flex lg:w-[40%] w-full lg:text-left text-center">
             <motion.p
               initial={{ x: -200}}
@@ -145,7 +145,7 @@ const About = () => {
         </div>
 
         <br></br>
-        <div className="flex justify-center md:justify-start">
+        <div className="max-[770px]:pb-10 flex justify-center md:justify-start">
         <motion.button
           className="px-7 py-4 flex select-none gap-1 rounded-lg bg-gradient-to-tr from-purple-800 to-cyan-400  text-center  font-sans text-[15px] font-bold uppercase text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
           type="button"

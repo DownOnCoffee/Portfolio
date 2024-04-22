@@ -119,8 +119,9 @@ const Feedbacks = () => {
               Let's interact!
             </motion.h1>
             <br></br>
-            <form className="flex flex-col gap-[30px]">
-              <div className="flex lg:flex-row sm:flex items-center gap-10">
+            <form className="flex flex-col  gap-[30px]">
+
+              <div className="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-[30px]">
                 <input
                   name="firstname"
                   onChange={(e) => {
