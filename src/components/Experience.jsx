@@ -51,7 +51,7 @@ const Experience = () => {
 
   return (
     <>
-      <div className={`md:px-[95px] sm:px-[50px]`}>
+      <div className={`px-95px]`}>
         <div className="flex justify-center mt-4 items-center flex-col">
           <motion.h1
             className={`${styles.heroHeadText}text-white mb-3 font-Montserrat`}
@@ -149,7 +149,7 @@ const Experience = () => {
                 initial={{ x: 0 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
-                <p className="font-bold text-white">Frontend developer:</p>
+                <p className="font-bold text-white">First project as Frontend developer:</p>
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems3.map((item)=>(

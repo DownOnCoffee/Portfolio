@@ -30,7 +30,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log(windowWidth <= 850 ? "small" : "big");
   }, [windowWidth]);
   
   return (
@@ -38,15 +37,15 @@ function App() {
    
       <BrowserRouter>
         <div className="relative z-0 ">
-          <div className="bg-hero-pattern bg-cover bg-repeat bg-center">
+          <div className="bg-hero-pattern bg-cover bg-repeat bg-center pb-7">
             <Navbar></Navbar>
             <Hero></Hero>
             
           </div>
+
           <div className="relative z-0 bg-bgcolor">
             <div id="about">
               <About></About>
-
             </div>
            
             <Tech></Tech>

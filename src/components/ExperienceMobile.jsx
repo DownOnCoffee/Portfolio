@@ -46,9 +46,6 @@ const ExperienceMobile = () => {
     const projlistitems3=["Engaged in an online frontend developer internship at Collcom ","Collaborated with a non-profit organization to develop a website for their Cybersecurity awareness campaign."];
     const projlistitems4=["Completed comprehensive training in HTML, CSS, and JavaScript by completing certifications."," acquiring essential skills for developing modern and responsive websites."];
 
-
-    
-
   return (
     <>
       <div className=" px-12">
@@ -89,8 +86,6 @@ const ExperienceMobile = () => {
                 </ul>
               </motion.div>
             </div>
-
-
             {/* second exp div */}
             <div className=" mb-32">
               <motion.div
@@ -121,8 +116,6 @@ const ExperienceMobile = () => {
               </motion.div>
             </div>
 
-
-
             {/* third exp div */}
             <div className="mb-32">
               <motion.div
@@ -142,7 +135,7 @@ const ExperienceMobile = () => {
                 initial={{ x: 50 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
-                <p className="font-bold text-white">First project as frontend developer :</p>
+                <p className="font-bold text-white">First project as Frontend developer:</p>
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems3.map((item)=>(

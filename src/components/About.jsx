@@ -20,6 +20,7 @@ const About = () => {
   const [ref2, inView2] = useInView({
     triggerOnce: true, // Ensures the animation runs once when the element enters the viewport
   });
+  const overviewPara=" Hi, I'm Manya, your friendly neighborhood coder! 🌟 I'm a college student pursuing B.Tech in Computer Science, spending my days diving into algorithms and data structures. At night, I switch to work on Full stack development and learning the ins and outs of the MERN stack. Alongside, I'm an AWS learner, exploring cloud computing technologies to complement my web development expertise.  Seamlessly merging software development principles with web design, I eagerly explore the diverse landscape of programming.💻🌟 I'm on the lookout for software development roles so hit me up ! ;)";
 
   const handledownload=()=>{
     
@@ -39,28 +40,21 @@ const About = () => {
 
       <div className={`md:px-[95px] sm:px-[50px]`}>
         <motion.h1
-          className={`${styles.heroHeadText}text-white mb-3 font-Montserrat`}
+          className={`${styles.heroHeadText}text-white mb-3 font-Montserrat lg:text-left text-center`}
         >
           Overview
         </motion.h1>
 
         {/* column 1 */}
-        <div className=" overflow-x-hidden flex flex-row gap-20 items-center">
-          <div className="flex w-[40%]">
+        <div className=" overflow-x-hidden flex lg:flex-row flex-col gap-20 items-center">
+          <div className="flex lg:w-[40%] w-full lg:text-left text-center">
             <motion.p
-            
               initial={{ x: -200}}
               whileInView={{ x: inView ? 0 : -200 }}
               transition={{ delay: 0.3, duration: 1.3 }}
               ref={ref}
-              className=" text-white leading-7 pb-3 font-Montserrat "
-            >
-              Hi, I'm Manya, your friendly neighborhood coder! 🌟 I'm a college
-              student pursuing B.Tech in Computer Science, spending my days diving into algorithms and data structures. At night, I switch to work on ReactJS and Frontend development and learning the ins and outs of the MERN stack, cooking up code with MongoDB, Express, React, and Node.js for backend projects - my dream stack is more than just letters!🌟.<br></br>
-              Alongside, I'm an AWS learner, exploring cloud computing
-              technologies to complement my web development expertise. 
-              Seamlessly merging software development principles with web design, I eagerly explore the diverse landscape of programming.💻🌟
-              I'm on the lookout for frontend and software development roles to make my mark in the digital cosmos!
+              className=" text-white leading-7 pb-3 font-Montserrat md:text-[15px] text-sm "
+            >{overviewPara}
             </motion.p>
           </div>
 
@@ -69,7 +63,7 @@ const About = () => {
             
             className="leading-7 text-right pb-3 whitespace-pre-line font-Montserrat "
           >
-            <div className="flex flex-row items-center gap-6">
+            <div className="flex lg:flex-row flex-col items-center gap-6">
 
               {/* flipping cards below */}
 
@@ -78,6 +72,7 @@ const About = () => {
               initial={{ rotate:-20 }}
               whileInView={{rotate:0 }}
               transition={{ delay: 0, duration: 0.7 }}
+              className="lg:w-[224px] h-[250px] w-[200px]"
               ref={ref2}
                 style={{
                   border: "3px solid white",
@@ -85,8 +80,6 @@ const About = () => {
                   background: "#5064C6",
                   display: "flex",
                   justifyContent: "center",
-                  width: "14rem", // w-14 equivalent
-                  height: "250px",
                   transition: 'transform 0.8s',
                 }}
               >
@@ -102,6 +95,7 @@ const About = () => {
               initial={{ rotate:-20 }}
               whileInView={{rotate:0 }}
               transition={{ delay: 0, duration: 0.7 }}
+              className="lg:w-[224px] h-[250px] w-[200px]"
               ref={ref2}
                 style={{
                   border: "3px solid white",
@@ -109,8 +103,6 @@ const About = () => {
                   background: "#5064C6",
                   display: "flex",
                   justifyContent: "center",
-                  width: "14rem", // w-14 equivalent
-                  height: "250px",
                   transition: 'transform 0.8s',
                 }}
               >
@@ -127,7 +119,7 @@ const About = () => {
               initial={{ rotate:-20 }}
               whileInView={{rotate:0 }}
               transition={{ delay: 0, duration: 0.7 }}
-              className="hover:cursor-pointer hover:border-black"
+              className="hover:cursor-pointer hover:border-black lg:w-[224px] h-[250px] w-[200px]"
               ref={ref2}
                 style={{
                   border: "3px solid white",
@@ -135,8 +127,6 @@ const About = () => {
                   background: "#5064C6",
                   display: "flex",
                   justifyContent: "center",
-                  width: "14rem", // w-14 equivalent
-                  height: "250px",
                   transition: 'transform 0.8s',
 
                 }}
@@ -155,8 +145,9 @@ const About = () => {
         </div>
 
         <br></br>
+        <div className="flex justify-center md:justify-start">
         <motion.button
-          className="px-7 py-4 flex select-none items-center gap-1 rounded-lg bg-gradient-to-tr from-purple-800 to-cyan-400  text-center align-middle font-sans text-[15px] font-bold uppercase text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
+          className="px-7 py-4 flex select-none gap-1 rounded-lg bg-gradient-to-tr from-purple-800 to-cyan-400  text-center  font-sans text-[15px] font-bold uppercase text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
           type="button"
           onClick={()=>{window.scrollTo(0,4800)}}
           data-ripple-light="true"
@@ -164,6 +155,9 @@ const About = () => {
         >
           Let's Connect!
         </motion.button>
+
+        </div>
+        
       </div>
     </>
   );
