@@ -9,7 +9,7 @@ const styles = {
     generalPadding:"md:px-[95px]  sm:px-[50px]",
   
     heroHeadText:
-      "font-black text-white lg:text-[60px] sm:text-[43px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-6",
+      "font-black text-white lg:text-[60px] sm:text-[44px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-6",
     heroSubText:
       "text-[#dfd9ff] font-medium lg:text-[60px] sm:text-[35px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-3",
     heroHead2Text:

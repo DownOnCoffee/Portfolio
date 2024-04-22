@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
+  ExperienceMobile,
   Contact,
   Experience,
   Feedbacks,
@@ -13,8 +14,25 @@ import {
 } from "./components";
 import "./App.css";
 import {NextUIProvider} from "@nextui-org/react";
+import { useEffect,useState } from "react";
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    console.log(windowWidth <= 850 ? "small" : "big");
+  }, [windowWidth]);
+  
   return (
     <>
    
@@ -32,7 +50,13 @@ function App() {
             </div>
            
             <Tech></Tech>
-            <Experience></Experience>
+            {/* {windowWidth<=850 ? (console.log('Rendering Experience') || <Experience /> ):( console.log('Rendering ExperienceMobile') || <ExperienceMobile />)} */}
+            {windowWidth <= 850 ? (
+              <ExperienceMobile />
+            ) : (
+              <Experience />
+            )}
+
             <NextUIProvider>
             <Works></Works>
             </NextUIProvider>
