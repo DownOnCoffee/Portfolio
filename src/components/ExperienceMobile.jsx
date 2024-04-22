@@ -37,12 +37,12 @@ const ExperienceMobile = () => {
   // }, [inView]);
 
   const expcardstyleright =
-    "flex-shrink-0 border-b-4 border-r-4 bg-gray-900 p-7 w-[400px]  rounded-xl leading-6";
+    "flex-shrink-0 border-b-4 border-r-4 bg-gray-900 p-7 w-[350px]  rounded-xl leading-6";
     const expcardstyleleft =
-    "flex-shrink-0 border-b-4 border-l-4 bg-gray-900 p-7 w-[400px]  rounded-xl leading-6";
+    "flex-shrink-0 border-b-4 border-l-4 bg-gray-900 p-7 w-[350px]  rounded-xl leading-6";
 
-    const projlistitems1=["I actively honed my React skills through personal and academic projects, solidifying my understanding of component-based development, state management, UI/UX best practices, and building dynamic websites that integrate with APIs.I also embarked on learning AWS and completed the Cloud Foundation course, gaining knowledge in Cloud computing.","Participated in Smart India hackathon and bagged the 3rd position at college level."];
-    const projlistitems2=["Contributed to the development of a dynamic land rental website - Patched","Developed user module with React, including authentication and registration flows managed by Axios API calls.","Implemented interactive landing page in React, fetching data for content display.","Built robust form validation with custom error handling, integrating OTP verification","Developed interfaces for multiple projects using HTML,CSS, Javascript which has improved my design principles."];
+    const projlistitems1=["I actively honed my React skills through personal and academic projects, solidifying my understanding of component-based development, state management, UI/UX best practices, and building dynamic websites that integrate with APIs. I also embarked on learning AWS and completed the Cloud Foundation course, gaining knowledge in Cloud computing.","Participated in Smart India hackathon and bagged the 3rd position at college level."];
+    const projlistitems2=["Contributed to the development of a land rental website - Patched","Developed user modules in React for smooth authentication and registration.","Created interactive landing pages in React, fetching and displaying content.","Built robust form validation with custom error handling, integrating OTP verification","Designed interfaces for various projects using HTML, CSS, and JavaScript, focusing on user experience."];
     const projlistitems3=["Engaged in an online frontend developer internship at Collcom ","Collaborated with a non-profit organization to develop a website for their Cybersecurity awareness campaign."];
     const projlistitems4=["Completed comprehensive training in HTML, CSS, and JavaScript by completing certifications."," acquiring essential skills for developing modern and responsive websites."];
 
@@ -81,7 +81,7 @@ const ExperienceMobile = () => {
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems1.map((item)=>(
-                  <li className="text-white text-md">{item}</li>
+                  <li className="text-white text-[14px]">{item}</li>
                 ))}
                 </ul>
               </motion.div>
@@ -110,7 +110,7 @@ const ExperienceMobile = () => {
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems2.map((item)=>(
-                  <li className="text-white text-md">{item}</li>
+                  <li className="text-white text-md text-[14px]">{item}</li>
                 ))}
                 </ul>
               </motion.div>
@@ -139,7 +139,7 @@ const ExperienceMobile = () => {
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems3.map((item)=>(
-                  <li className="text-white">{item}</li>
+                  <li className="text-white text-[14px]">{item}</li>
                 ))}
                 </ul>
               </motion.div>
@@ -169,7 +169,7 @@ const ExperienceMobile = () => {
                
                 <ul style={{ listStyle: 'disc' }}>
                 {projlistitems4.map((item)=>(
-                  <li className="text-white">{item}</li>
+                  <li className="text-white text-[14px]">{item}</li>
                 ))}
                 </ul>
               </motion.div>
