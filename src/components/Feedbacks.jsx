@@ -104,12 +104,12 @@ const Feedbacks = () => {
         style={{ zIndex: 10000,marginTop:"90px"}} 
       />
 
-      <div className="md:px-[95px] sm:px-[50px] bg-bgcolor lg:pt-20 sm:pt-10 mt-16">
+      <div className="md:px-[95px] px-[30px] bg-bgcolor lg:pt-20 pt-0 mt-16">
         <div className="flex lg:flex-row sm:flex-col  lg:gap-10 sm:gap-6">
           <div>
             <img
               src={contactimg}
-              className="w-full h-full sm:justify-center"
+              className="w-full h-full max-[460px]:w-[400px] sm:justify-center"
             ></img>
           </div>
           <div>
