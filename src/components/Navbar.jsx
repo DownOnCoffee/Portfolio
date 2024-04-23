@@ -29,11 +29,10 @@ const Navbar = () => {
       }} 
       className="mb-3 h-[15px] bg-white "> 
     </motion.div>
-    
-    
-
+  
     </div> 
-      <nav className="w-full sm:px-6 md:py-3 sm:py-[1px] fixed top-3 z-30 bg-black overflow-x-hidden">
+
+      <nav className="w-full sm:px-6 md:py-3 py-1  fixed top-3 z-30 bg-black overflow-x-hidden">
         <div className=" flex justify-between items-center">
           <Link
             to="/"
@@ -72,11 +71,11 @@ const Navbar = () => {
           </ul>
 
           {/*mobile screen nav*/}
-          <div className=" lg:hidden sm:flex items-center">
+          <div className=" md:hidden flex items-center">
             <img
               src={Toggle ? close : menu}
               alt="menu"
-              className="w-[28px] h-[28px] object-contain cursor-pointer "
+              className="w-[26px] h-[26px] object-contain cursor-pointer "
               onClick={() => setToggle(!Toggle)}
             ></img>
             <div

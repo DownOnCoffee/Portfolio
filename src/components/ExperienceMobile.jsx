@@ -31,7 +31,7 @@ const ExperienceMobile = () => {
   // useEffect(() => {
   //   const timeout = setTimeout(() => {
   //     // Trigger animations or set state for animations here
-  //   }, 1000); // Adjust the delay as needed
+  //   }, 1500); // Adjust the delay as needed
   
   //   return () => clearTimeout(timeout);
   // }, [inView]);
@@ -58,11 +58,11 @@ const ExperienceMobile = () => {
           <br></br>
 
           {/* first exp div */}
-            <div className=" mb-32 ">
+            <div className=" mb-32 overflow-x-hidden">
               <motion.div
                 className="font-italic whitespace-nowrap text-white text-center "
-                whileInView={{ x: inView1 ? 0 : 50 }}
-                initial={{ x: 50 }}
+                whileInView={{ x: inView1 ? 0 : 15 }}
+                initial={{ x: 15 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
                 ref={ref1}
                
@@ -72,8 +72,8 @@ const ExperienceMobile = () => {
               <motion.div
                 className={expcardstyleright}
                 ref={ref1}
-                whileInView={{ x: inView1 ? 0 : 50 }}
-                initial={{ x: 50 }}
+                whileInView={{ x: inView1 ? 0 : 15 }}
+                initial={{ x: 15 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
                 <p className="font-bold text-white ">Personal React Projects:</p>
@@ -120,8 +120,8 @@ const ExperienceMobile = () => {
             <div className="mb-32">
               <motion.div
                 className=" text-white whitespace-nowrap text-center "
-                whileInView={{ x: inView3 ? 0 : 60 }}
-                initial={{ x: 60 }}
+                whileInView={{ x: inView3 ? 0 : 15 }}
+                initial={{ x: 15 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
                 ref={ref3}
                 
@@ -131,8 +131,8 @@ const ExperienceMobile = () => {
               <motion.div
                 className={expcardstyleright}
                 ref={ref3}
-                whileInView={{ x: inView3 ? 0 : 50 }}
-                initial={{ x: 50 }}
+                whileInView={{ x: inView3 ? 0 : 15 }}
+                initial={{ x: 15 }}
                 transition={{ delay: 0.1, duration: 0.9 }}
               >
                 <p className="font-bold text-white">First project as Frontend developer:</p>
@@ -148,7 +148,7 @@ const ExperienceMobile = () => {
 
 
             {/* fourth exp div */}
-            <div className="mb-30">
+            <div className="mb-0">
               <motion.div
                 className="font-italic text-white whitespace-nowrap text-center"
                 whileInView={{ x: inView4 ? 0 : -50 }}
@@ -156,7 +156,7 @@ const ExperienceMobile = () => {
                 transition={{ delay: 0.1, duration: 0.9 }}
                 ref={ref4}
               >
-                2022 - 2023
+                1522 - 1523
               </motion.div><br></br>
               <motion.div
                 className={expcardstyleleft }
