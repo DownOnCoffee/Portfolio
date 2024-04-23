@@ -86,7 +86,7 @@ const About = () => {
                 <div className=" flex flex-col gap-2 items-center mt-10 filter fill-transparent ">
                   <img src={expbadge}></img>
                   <h2 className=" text-white font-mono text-2xl font-semibold">Experience</h2>
-                  <p className="  font-Montserrat text-lg text-white text-center font-semibold">1.5 years</p>
+                  <p className="  font-Montserrat text-lg text-white text-center font-semibold">1 year</p>
                 </div>
               </motion.div>
 
@@ -109,7 +109,7 @@ const About = () => {
                 <div className=" flex flex-col gap-2  items-center filter mt-12 fill-transparent px-3 ">
                   <img className="w-10" src={projectlogo}></img>
                   <h2 className="font-mono text-2xl font-semibold text-white ">Projects</h2>
-                  <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6">Engaged in <span className="text-blue-900 font-bold text-[16px]"> 10 </span> projects<br></br>Successfully completed <span className="text-blue-900 font-bold text-[16px]"> 7 </span>  of them!</p>
+                  <p className="font-Montserrat  text-[14px] text-white text-center font-semibold leading-6">Engaged in <span className="text-blue-900 font-bold text-[16px]"> 13 </span> projects<br></br>Successfully completed <span className="text-blue-900 font-bold text-[16px]"> 11 </span>  of them!</p>
                   
                 </div>
               </motion.div>

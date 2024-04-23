@@ -31,9 +31,9 @@ const Works = () => {
     },
     
     {
-      title: "IP Address tracker",
+      title: "TraceSpot",
       img: "/images/ipadd.png",
-      techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind  ",
+      techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind CSS",
       link:"https://ipaddtracker.vercel.app/"
     },
    

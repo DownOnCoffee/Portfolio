@@ -18,6 +18,7 @@ const Navbar = () => {
   // const imageXPosition = useTransform(scrollYProgress, [0, 1], [0,1500]); 
   const [Active, setActive] = useState("initail");
   const [Toggle, setToggle] = useState(false);
+
   return (
     <>
     {/*X scroll at the top of page*/}
@@ -45,20 +46,21 @@ const Navbar = () => {
             <img
               src={mainlogo}
               alt="logo"
-              className="w-[98px] h-[60px] object-container"
+              className="md:w-[98px] md:h-[60px] w-[78px] h-[45px] object-container"
             ></img>
-            <p className="cursor-pointer text-[15px] text-white">
+            <p className="cursor-pointer text-[15px] text-white md:block hidden ">
               Manya | <span>Portfolio</span>
             </p>
           </Link>
+
           {/* Active state is being used for styling and toggle between white and grey color on click */}
-          <ul className="list-none sm:hidden md:flex flex-row gap-11 ">
+          <ul className="list-none flex flex-row md:gap-11 gap-4 ">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`${
                   Active === link.title ? "text-white" : "text-gray-700"
-                } text-[17.5px] cursor-pointer  hover:text-[18px] hover:text-gray-400 `}
+                } md:text-[17.5px] text-[15px] cursor-pointer  hover:text-[18px] hover:text-gray-400 `}
                 onClick={() => {
                   setActive(link.title);
                   window.scrollTo(link.horzscroll,link.vertscroll);
@@ -69,40 +71,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-
-          {/*mobile screen nav*/}
-          <div className=" md:hidden flex items-center">
-            <img
-              src={Toggle ? close : menu}
-              alt="menu"
-              className="w-[26px] h-[26px] object-contain cursor-pointer "
-              onClick={() => setToggle(!Toggle)}
-            ></img>
-            <div
-              className={`${
-                !Toggle ? "hidden" : "flex"
-              } p-6  black-gradient absolute top-20 right-0 mx-5 my-2 min-w-[140px] z-10 rounded-xl`}
-            >
-              <ul className="list-none sm:flex flex justify-end items-start flex-col gap-4 ">
-                {navLinks.map((link) => (
-                  <li
-                    key={link.id}
-                    className={`${
-                      Active === link.title ? "text-white" : "text-gray-300"
-                    } hover:text-white font-poppins font-medium cursor-pointer text-[17px]`}
-                    onClick={() => {
-                      setActive(link.title);
-                      window.scrollTo(link.horzscroll,link.vertscroll);
-                      
-                      setToggle(!Toggle);
-                    }}
-                  >
-                    <NavLink to={link.id}>{link.title}</NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
       </nav>
     </>

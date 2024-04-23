@@ -36,7 +36,7 @@ import {
       id: "work",
       title: "Work",
       horzscroll:"0",
-      vertscroll:"3180"
+      vertscroll:"3150"
     },
     {
       id: "contact",
