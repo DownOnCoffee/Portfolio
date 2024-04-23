@@ -28,24 +28,81 @@ const ExperienceMobile = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     // Trigger animations or set state for animations here
-  //   }, 1500); // Adjust the delay as needed
+  const [ref5, inView5] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   
-  //   return () => clearTimeout(timeout);
-  // }, [inView]);
+  const projectItems = [
+    {
+      items:[
+        "Began with a commercial website using Node.js, Express.js, and MongoDB to grasp foundational MERN operations.",
+        "Developed hotel booking application in just three days, showcasing swift development capabilities.",
+        "Developed a chat service that integrates both frontend and backend, highlighting my expertise in real-time communications, security protocols and development."
+      ],
+      ref: ref5,
+      timeline: "February'23",
+      view: "inView5",
+      xValViewDate: 50,
+      xValInitialDate:0,
+      direction: "left",
+      xValViewText: -530,
+      xValInitialText:-670,
+      heading: "Backend journey:",
+    },
+    {
+      items: [
+        "I have deepened my React expertise through both commercial and personal projects, designing and deploying web apps that integrate smoothly with various APIs.This experience underlines my proficiency in managing complex systems and elevating user experiences.I also embarked on learning AWS and completed the Cloud Foundation course.",
+        "Participated in Smart India hackathon and bagged the 3rd position at college level.",
+      ],
+      ref: ref1,
+      timeline: "August'23 - December'23",
+      view: "inView1",
+      xValViewDate: -250,
+      xValInitialDate: -180,
+      direction: "right",
+      xValViewText: -160,
+      xValInitialText: 0,
+      heading: "Personal React Projects:",
+    },
+    {
+      items: [
+        "Contributed to the development of a dynamic land rental website - Patched",
+        "Developed user module, including authentication and registration flows.",
+        "Implemented interactive landing page in React.",
+        "Built robust form validation with custom error handling, integrating OTP verification",
+        "Developed interfaces for multiple projects using HTML, CSS, Javascript which has improved my design principles.",
+      ],
+      ref:ref2,
+      timeline: " June'23 - August'23",
+      view: " inView2",
+      xValViewDate: 50,
+      xValInitialDate: 0,
+      direction: "left",
+      xValViewText: -580,
+      xValInitialText: -700,
+      heading: "React Developer Intern - Triazine Software Pvt Ltd ",
+    },
+    {
+      items: [
+        "Engaged in an online frontend developer internship at Collcom",
+        "Collaborated with a non-profit organization to develop a website for their Cybersecurity awareness campaign.",
+      ],
+      ref: ref3,
+      timeline: "April'23 - June'23",
+      view: " inView3",
+      xValViewDate: -180,
+      xValInitialDate: -150,
+      direction: "right",
+      xValViewText: -100,
+      xValInitialText: 0,
+      heading: "First project as Frontend developer:",
+    }
+  ];
 
-  const expcardstyleright =
-    "flex-shrink-0 border-b-4 border-r-4 bg-gray-900 p-7 w-[350px]  rounded-xl leading-6";
-    const expcardstyleleft =
-    "flex-shrink-0 border-b-4 border-l-4 bg-gray-900 p-7 w-[350px]  rounded-xl leading-6";
 
-    const projlistitems1=["I actively honed my React skills through personal and academic projects, solidifying my understanding of component-based development, state management, UI/UX best practices, and building dynamic websites that integrate with APIs. I also embarked on learning AWS and completed the Cloud Foundation course, gaining knowledge in Cloud computing.","Participated in Smart India hackathon and bagged the 3rd position at college level."];
-    const projlistitems2=["Contributed to the development of a land rental website - Patched","Developed user modules in React for smooth authentication and registration.","Created interactive landing pages in React, fetching and displaying content.","Built robust form validation with custom error handling, integrating OTP verification","Designed interfaces for various projects using HTML, CSS, and JavaScript, focusing on user experience."];
-    const projlistitems3=["Engaged in an online frontend developer internship at Collcom ","Collaborated with a non-profit organization to develop a website for their Cybersecurity awareness campaign."];
-    const projlistitems4=["Completed comprehensive training in HTML, CSS, and JavaScript by completing certifications."," acquiring essential skills for developing modern and responsive websites."];
-
+  const expcardstyle ="flex-shrink-0 border-b-4 border-r-4 bg-gray-900 p-7 w-[350px]  rounded-xl leading-6";
   return (
     <>
       <div className=" px-12">
@@ -57,126 +114,54 @@ const ExperienceMobile = () => {
           </motion.h1>
           <br></br>
 
-          {/* first exp div */}
-            <div className=" mb-32 overflow-x-hidden">
-              <motion.div
-                className="font-italic whitespace-nowrap text-white text-center "
-                whileInView={{ x: inView1 ? 0 : 15 }}
-                initial={{ x: 15 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-                ref={ref1}
-               
-              >
-                August'23 - December'23
-              </motion.div><br></br>
-              <motion.div
-                className={expcardstyleright}
-                ref={ref1}
-                whileInView={{ x: inView1 ? 0 : 15 }}
-                initial={{ x: 15 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-              >
-                <p className="font-bold text-white ">Personal React Projects:</p>
-               
-               
-                <ul style={{ listStyle: 'disc' }}>
-                {projlistitems1.map((item)=>(
-                  <li className="text-white text-[14px]">{item}</li>
-                ))}
-                </ul>
-              </motion.div>
-            </div>
-            {/* second exp div */}
-            <div className=" mb-32">
-              <motion.div
-                className="font-italic text-white whitespace-nowrap text-center"
-                whileInView={{ x: inView2 ? 0: -50 }}
-                initial={{ x: -50 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-                ref={ref2}
-                
-              >
-                June'23 - August'23
-              </motion.div><br></br>
-              <motion.div
-                className={expcardstyleleft}
-                ref={ref2}
-                whileInView={{ x: inView2 ? 0: -50 }}
-                initial={{ x: -50 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-              >
-                <p className="font-bold text-white">React  Developer Intern:</p>
-                <p className="text-white">Triazine Software Pvt Ltd</p><br></br>
-               
-                <ul style={{ listStyle: 'disc' }}>
-                {projlistitems2.map((item)=>(
-                  <li className="text-white text-md text-[14px]">{item}</li>
-                ))}
-                </ul>
-              </motion.div>
-            </div>
+            {projectItems.map((item, index) => (
+              <div className="flex items-baseline mb-24" key={index}>
+                <motion.div
+                  className="font-italic whitespace-nowrap text-white"
+                  whileInView={{
+                    x: (item.view)
+                      ? item.xValViewDate
+                      : item.xValInitialDate,
+                    opacity: (item.view) ? 1 : 0,
+                  }}
+                  transition={{
+                    delay: (item.view) ? 0.3 : 0,
+                    duration: 0.6,
+                  }}
+                  ref={eval(item.ref)}
+                  initial={{ x: item.xValInitialDate, opacity: 0 }}
+                >
+                  {item.timeline}
+                </motion.div>
 
-            {/* third exp div */}
-            <div className="mb-32">
-              <motion.div
-                className=" text-white whitespace-nowrap text-center "
-                whileInView={{ x: inView3 ? 0 : 15 }}
-                initial={{ x: 15 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-                ref={ref3}
-                
-              >
-                April'23 - June'23
-              </motion.div><br></br>
-              <motion.div
-                className={expcardstyleright}
-                ref={ref3}
-                whileInView={{ x: inView3 ? 0 : 15 }}
-                initial={{ x: 15 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-              >
-                <p className="font-bold text-white">First project as Frontend developer:</p>
-               
-                <ul style={{ listStyle: 'disc' }}>
-                {projlistitems3.map((item)=>(
-                  <li className="text-white text-[14px]">{item}</li>
-                ))}
-                </ul>
-              </motion.div>
-            </div>
-
-
-
-            {/* fourth exp div */}
-            <div className="mb-0">
-              <motion.div
-                className="font-italic text-white whitespace-nowrap text-center"
-                whileInView={{ x: inView4 ? 0 : -50 }}
-                initial={{ x:-50 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-                ref={ref4}
-              >
-                1522 - 1523
-              </motion.div><br></br>
-              <motion.div
-                className={expcardstyleleft }
-                ref={ref4}
-                whileInView={{ x: inView4 ? 0 : -50 }}
-                initial={{ x:-50 }}
-                transition={{ delay: 0.1, duration: 0.9 }}
-              >
-                <p className="font-bold text-white">Web Development Foundations Training</p>
-               
-                <ul style={{ listStyle: 'disc' }}>
-                {projlistitems4.map((item)=>(
-                  <li className="text-white text-[14px]">{item}</li>
-                ))}
-                </ul>
-              </motion.div>
-            </div>
+                <motion.div
+                  className={`flex-shrink-0 border-b-4 border-${
+                    item.direction === "right" ? "r" : "l"
+                  }-4 bg-gray-900 p-7 w-[400px] rounded-xl leading-6`}
+                  ref={(item.ref)}
+                  whileInView={{
+                    x: (item.view)
+                      ? item.xValViewText
+                      : item.xValInitialText,
+                  }}
+                  initial={{ x: item.xValInitialText }}
+                  transition={{ delay: 0.1, duration: 0.9 }}
+                >
+                  <p className="font-bold text-white">{item.heading}</p>
+                  <ul style={{ listStyle: "disc" }}>
+                    {item.items.map((ele, idx) => (
+                      <li className="text-white" key={idx}>
+                        {ele}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </div>
+            ))}
+          </div>
+           
 
         </div>
-      </div>
     </>
   );
 };

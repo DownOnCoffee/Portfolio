@@ -42,7 +42,7 @@ import {
       id: "contact",
       title: "Contact",
       horzscroll:"0",
-      vertscroll:"4800"
+      vertscroll:"4600"
     },
   ];
   
