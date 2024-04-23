@@ -31,20 +31,19 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col">
-            <h1 className={`${styles.heroHeadText} text-white `}>Hi, I'm <span className="text-[#C50598] lg:text-[70px] sm:text-[48px]">Manya!</span></h1>
+            <h1 className={`${styles.heroHeadText} text-white `}>Hi, I'm <span className="text-[#C50598] lg:text-[70px] text-[48px]">Manya!</span></h1>
         
 
             {/*Typing animation*/}
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Glad to have you here ;) ",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "I am a Computer science student  ",
+                1000, 
+                "MERN Stack Developer at your service 💻",
                 1000,
-                "And a Frontend React developer!",
+                "Available for work 📆",
                 1000,
-                "Thanks for dropping by!",
+                "Drop a feedback or contact me! 📬",
                 1000,
               ]}
               className={`${styles.heroSubText}`}

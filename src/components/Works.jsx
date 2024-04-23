@@ -15,7 +15,9 @@ import {
 } from "@nextui-org/react";
 
 const Works = () => {
+
   const { scrollYProgress } = useScroll();
+  
   const list = [
     {
       title: "Patched",
@@ -95,7 +97,7 @@ const Works = () => {
         </svg>
 
         <motion.h1
-          className={`font-black sm:text-[43px] xs:text-[50px]  lg:leading-[90px]  text-white lg:text-[80px] text-center font-Montserrat`}
+          className={`font-black lg:leading-[90px]  text-white md:text-[60px]   text-[50px] lg:text-[80px] text-center font-Montserrat`}
         >
           My Works
         </motion.h1>
@@ -113,7 +115,7 @@ const Works = () => {
       
 
       <motion.div className="bg-[#050816]">
-        <div className="gap-4 grid grid-cols-2 sm:grid-cols-3 px-5">
+        <div className="gap-4 grid sm:grid-cols-2 md:grid-cols-3 px-5">
           {list.map((item, index) => (
             <motion.div
               ref={ref}
@@ -121,7 +123,7 @@ const Works = () => {
               whileInView={{ opacity: 100, scale: 1 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.4, easeInOut, delay: index / 5 }}
-              className="max-w-[470px]"
+              className="max-w-[470px] "
             >
               <Link to ={item.link}>
               
@@ -130,8 +132,6 @@ const Works = () => {
                 shadow="md"
                 key={index}
                 isPressable
-               
-                onPress={() => console.log("item pressed")}
               >
                 <CardBody className="hover:blur-sm overflow-visible p-0">
                   
@@ -142,13 +142,9 @@ const Works = () => {
                       className=" object-cover h-[220px] shadow-2xl w-full"
                       src={item.img}
                     ></Image>
-                    <p className="absolute top-1/2 left-1/2 ">tap</p>
-                    {/* <Button className=" absolute top-50 right-50 transition-all duration-300 bg-black text-white opacity-0 hover:opacity-100">
-                      share
-                    </Button> */}
-                  
+                   
                 </CardBody>
-                <CardFooter className="text-small justify-center flex flex-col">
+                <CardFooter className=" h-20 text-small justify-start flex flex-col">
                   <b>{item.title}</b>
                   <small className="text-default-500">{item.techstack}</small>
                 </CardFooter>
@@ -158,13 +154,6 @@ const Works = () => {
             </motion.div>
           ))}
         </div>
-        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#050816"
-            fill-opacity="1.0"
-            d="M0,96L40,117.3C80,139,160,181,240,192C320,203,400,181,480,154.7C560,128,640,96,720,106.7C800,117,880,171,960,176C1040,181,1120,139,1200,117.3C1280,96,1360,96,1400,96L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-          ></path>
-        </svg> */}
       </motion.div>
     </>
   );
