@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 const Hero = () => {
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 800;
  
   const styleForMobile = {
     fontSize: '1.5em', // Set the font size for mobile screens
@@ -39,7 +39,7 @@ const Hero = () => {
               sequence={[
                 "Glad to have you here ;) ",
                 1000, 
-                "MERN Stack Developer at your service 💻",
+                "MERN Stack Developer at your service💻",
                 1000,
                 "Available for work 📆",
                 1000,

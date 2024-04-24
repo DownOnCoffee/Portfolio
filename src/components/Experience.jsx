@@ -48,7 +48,7 @@ const Experience = () => {
       items:[
         "Began with a commercial website using Node.js, Express.js, and MongoDB to grasp foundational MERN operations.",
         "Developed hotel booking application in just three days, showcasing swift development capabilities.",
-        "Developed a chat service that integrates both frontend and backend, highlighting my expertise in real-time communications, security protocols and development."
+        "Developed a chat service, highlighting my expertise in real-time communications, security protocols and development."
       ],
       ref: ref5,
       timeline: "February'23",
@@ -62,7 +62,7 @@ const Experience = () => {
     },
     {
       items: [
-        "I have deepened my React expertise through both commercial and personal projects, designing and deploying web apps that integrate smoothly with various APIs.This experience underlines my proficiency in managing complex systems and elevating user experiences.I also embarked on learning AWS and completed the Cloud Foundation course.",
+        "I have advanced my React skills through commercial and personal projects, designing web apps that seamlessly integrate with diverse APIs.Also embarked on learning AWS and completed the Cloud Foundation course.",
         "Participated in Smart India hackathon and bagged the 3rd position at college level.",
       ],
       ref: ref1,
@@ -77,11 +77,10 @@ const Experience = () => {
     },
     {
       items: [
-        "Contributed to the development of a dynamic land rental website - Patched",
-        "Developed user module, including authentication and registration flows.",
+        "Contributed to the development of a land rental website - Patched",
+        "Developed user module, including authentication and registration flows, form validation with custom error handling.",
         "Implemented interactive landing page in React.",
-        "Built robust form validation with custom error handling, integrating OTP verification",
-        "Developed interfaces for multiple projects using HTML, CSS, Javascript which has improved my design principles.",
+        "Developed interfaces for multiple projects using HTML, CSS, Javascript which improved my design principles.",
       ],
       ref:ref2,
       timeline: " June'23 - August'23",
@@ -144,8 +143,7 @@ const Experience = () => {
                 </motion.div>
 
                 <motion.div
-                  className={`flex-shrink-0 border-b-4 border-${
-                    item.direction === "right" ? "r" : "l"
+                  className={`flex-shrink-0 border-b-4 border-${item.direction === "right" ? "r" : "l"
                   }-4 bg-gray-900 p-7 w-[400px] rounded-xl leading-6`}
                   ref={(item.ref)}
                   whileInView={{

@@ -20,7 +20,7 @@ const About = () => {
   const [ref2, inView2] = useInView({
     triggerOnce: true, // Ensures the animation runs once when the element enters the viewport
   });
-  const overviewPara=" Hi, I'm Manya, your friendly neighborhood coder! 🌟 I'm a college student pursuing B.Tech in Computer Science, spending my days diving into algorithms and data structures. At night, I switch to work on Full stack development and learning the ins and outs of the MERN stack. Alongside, I'm an AWS learner, exploring cloud computing technologies to complement my web development expertise.  Seamlessly merging software development principles with web design, I eagerly explore the diverse landscape of programming.💻🌟 I'm on the lookout for software development roles so hit me up ! ;)";
+  const overviewPara=" Hi, I'm Manya ! 🌟 I'm a college student pursuing B.Tech in Computer Science, spending my days diving into algorithms and data structures. At night, I switch to work on Full stack development and learning the ins and outs of the MERN stack, Seamlessly merging software development principles with web design.💻🌟Beyond academics and tech, I take pride in leading several clubs at my university,from dance to fashion, which complement my interest in sports and fitness also. This involvement enriches my balanced lifestyle. I'm on the lookout for software development roles so hit me up ! ;)";
 
   const handledownload=()=>{
     

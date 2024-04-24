@@ -44,11 +44,11 @@ const ExperienceMobile = () => {
       ref: ref5,
       timeline: "February'23",
       view: "inView5",
-      xValViewDate: 50,
-      xValInitialDate:0,
+      xValViewDate: 0,
+      xValInitialDate:-50,
       direction: "left",
-      xValViewText: -530,
-      xValInitialText:-670,
+      xValViewText: 0,
+      xValInitialText:-50,
       heading: "Backend journey:",
     },
     {
@@ -59,11 +59,11 @@ const ExperienceMobile = () => {
       ref: ref1,
       timeline: "August'23 - December'23",
       view: "inView1",
-      xValViewDate: -250,
-      xValInitialDate: -180,
+      xValViewDate: 0,
+      xValInitialDate: 15,
       direction: "right",
-      xValViewText: -160,
-      xValInitialText: 0,
+      xValViewText: 0,
+      xValInitialText: 15,
       heading: "Personal React Projects:",
     },
     {
@@ -77,11 +77,11 @@ const ExperienceMobile = () => {
       ref:ref2,
       timeline: " June'23 - August'23",
       view: " inView2",
-      xValViewDate: 50,
-      xValInitialDate: 0,
+      xValViewDate: 0,
+      xValInitialDate: -50,
       direction: "left",
-      xValViewText: -580,
-      xValInitialText: -700,
+      xValViewText: 0,
+      xValInitialText: -50,
       heading: "React Developer Intern - Triazine Software Pvt Ltd ",
     },
     {
@@ -92,11 +92,11 @@ const ExperienceMobile = () => {
       ref: ref3,
       timeline: "April'23 - June'23",
       view: " inView3",
-      xValViewDate: -180,
-      xValInitialDate: -150,
+      xValViewDate: 0,
+      xValInitialDate: -50,
       direction: "right",
-      xValViewText: -100,
-      xValInitialText: 0,
+      xValViewText: 0,
+      xValInitialText: -50,
       heading: "First project as Frontend developer:",
     }
   ];
@@ -115,7 +115,7 @@ const ExperienceMobile = () => {
           <br></br>
 
             {projectItems.map((item, index) => (
-              <div className="flex items-baseline mb-24" key={index}>
+              <div className="mb-24" key={index}>
                 <motion.div
                   className="font-italic whitespace-nowrap text-white"
                   whileInView={{
@@ -132,12 +132,10 @@ const ExperienceMobile = () => {
                   initial={{ x: item.xValInitialDate, opacity: 0 }}
                 >
                   {item.timeline}
-                </motion.div>
+                </motion.div><br></br>
 
                 <motion.div
-                  className={`flex-shrink-0 border-b-4 border-${
-                    item.direction === "right" ? "r" : "l"
-                  }-4 bg-gray-900 p-7 w-[400px] rounded-xl leading-6`}
+                  className={`flex-shrink-0 border-b-4 border-${ item.direction === "right" ? "r" : "l" }-4 bg-gray-900 p-7 w-[350px] rounded-xl leading-6`}
                   ref={(item.ref)}
                   whileInView={{
                     x: (item.view)

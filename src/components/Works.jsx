@@ -38,14 +38,13 @@ const Works = () => {
       techstack: "ReactJs , Geolocation API , Leaflet Map , Tailwind CSS",
       link:"https://ipaddtracker.vercel.app/"
     },
-   
     {
-      title: "Myntra Clone (HomePage)",
-      img: "/images/myntraclone.png",
-      techstack: "HTML , Tailwind , Javascript ",
-      link:"https://github.com/DownOnCoffee/myntraClone"
-    
+      title: "CollCom ",
+      img: "/images/collcomss.png",
+      techstack: "Javascript , HTML , Tailwind",
+      link:"https://github.com/DownOnCoffee/Collcom"
     },
+
     {
       title: "Digital Adhivakta",
       img: "/images/jj1.png",
@@ -59,12 +58,13 @@ const Works = () => {
       link:"https://to-do-list-sooty-six.vercel.app/"
     },
     {
-      title: "CollCom ",
-      img: "/images/collcomss.png",
-      techstack: "Javascript , HTML , Tailwind",
-      link:"https://github.com/DownOnCoffee/Collcom"
-    },
+      title: "Myntra Clone (HomePage)",
+      img: "/images/myntraclone.png",
+      techstack: "HTML , Tailwind , Javascript ",
+      link:"https://github.com/DownOnCoffee/myntraClone"
     
+    },
+  
     {
       title: "Advice Generator App",
       img: "/images/advicess.png",
