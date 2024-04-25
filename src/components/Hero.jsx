@@ -39,7 +39,7 @@ const Hero = () => {
               sequence={[
                 "Glad to have you here ;) ",
                 1000, 
-                "MERN Stack Developer at your service💻",
+                "MERN Developer at your service💻",
                 1000,
                 "Available for work 📆",
                 1000,
@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
           </div>
           <br></br>
-          <div className={isMobile?"p-5":"p-0"}></div>
+          {/* <div className={isMobile?"p-5":"p-0"}></div> */}
           <ComputersCanvas />
           <br></br>
           <br></br>
