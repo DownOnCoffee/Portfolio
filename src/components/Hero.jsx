@@ -57,13 +57,10 @@ const Hero = () => {
           </div>
           <br></br>
           <div className={isMobile?"p-5":"p-0"}></div>
-          
           <ComputersCanvas />
           <br></br>
           <br></br>
-          
-         
-       
+
       </section>
     </>
   );
