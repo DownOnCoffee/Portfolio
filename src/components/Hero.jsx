@@ -1,3 +1,4 @@
+
 import React from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -21,7 +22,7 @@ const Hero = () => {
     <>
     <div className={isMobile?"p-5":"p-0"}></div>
     
-      <section className="relative w-full h-screen mx-auto">
+      <section className="relative w-full h-[350px] mx-auto">
         <div
           className={`${styles.paddingX} absolute inset-0 lg:top-[120px] sm:top-[60px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
         >
@@ -52,16 +53,19 @@ const Hero = () => {
               style={isMobile ? {fontSize:"1.5em"}:  {fontSize:"2em"}}
               repeat={Infinity}
             />
+           
             
           </div>
+         
           </div>
-          <br></br>
-          {/* <div className={isMobile?"p-5":"p-0"}></div> */}
-          <ComputersCanvas />
-          <br></br>
-          <br></br>
+         
 
       </section>
+      <div className='flex items-center justify-center md:h-[350px] lg:h-[400px] h-[250px]'>
+      <ComputersCanvas />
+
+      </div>
+      
     </>
   );
 };

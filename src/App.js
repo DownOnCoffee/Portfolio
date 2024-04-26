@@ -37,7 +37,7 @@ function App() {
    
       <BrowserRouter>
         <div className="relative z-0 ">
-          <div className="bg-hero-pattern bg-cover bg-repeat bg-center pb-7">
+          <div className="bg-hero-pattern bg-cover bg-repeat bg-center ">
             <Navbar></Navbar>
             <Hero></Hero>
             

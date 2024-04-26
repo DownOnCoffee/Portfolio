@@ -6,6 +6,7 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+  const positionY = isMobile ? 0 : -2;
 
   return (
     <mesh>
@@ -19,10 +20,16 @@ const Computers = ({ isMobile }) => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      <primitive
+      {/* <primitive
         object={computer.scene}
         scale={isMobile ? 0.58 : 0.75}
         position={isMobile ? [0, -3, -1.0] : [0, -3.25, -1.5]}
+        rotation={[-0.01, -0.2, -0.1]}
+      /> */}
+      <primitive
+        object={computer.scene}
+        scale={isMobile ? 0.78 : 1.1} // Adjust scale if needed to make it bigger
+        position={[isMobile?3:0, positionY, 0]} // Adjust Y position here
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -31,6 +38,7 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+ 
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -60,6 +68,7 @@ const ComputersCanvas = () => {
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      className="h-full"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
