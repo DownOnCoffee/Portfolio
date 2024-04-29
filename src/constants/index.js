@@ -36,13 +36,13 @@ import {
       id: "work",
       title: "Work",
       horzscroll:"0",
-      vertscroll:"3000"
+      vertscroll:"2850"
     },
     {
       id: "contact",
       title: "Contact",
       horzscroll:"0",
-      vertscroll:"4600"
+      vertscroll:"4800"
     },
   ];
   export const navLinksMobile = [

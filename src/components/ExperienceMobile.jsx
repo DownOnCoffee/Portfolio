@@ -53,7 +53,7 @@ const ExperienceMobile = () => {
     },
     {
       items: [
-        "I have deepened my React expertise through both commercial and personal projects, designing and deploying web apps that integrate smoothly with various APIs.This experience underlines my proficiency in managing complex systems and elevating user experiences.I also embarked on learning AWS and completed the Cloud Foundation course.",
+        "I have advanced my React skills through commercial and personal projects, designing web apps that seamlessly integrate with diverse APIs.Also embarked on learning AWS and completed the Cloud Foundation course.",
         "Participated in Smart India hackathon and bagged the 3rd position at college level.",
       ],
       ref: ref1,
@@ -68,11 +68,10 @@ const ExperienceMobile = () => {
     },
     {
       items: [
-        "Contributed to the development of a dynamic land rental website - Patched",
-        "Developed user module, including authentication and registration flows.",
+        "Contributed to the development of a land rental website - Patched",
+        "Developed user module, including authentication and registration flows, form validation with custom error handling.",
         "Implemented interactive landing page in React.",
-        "Built robust form validation with custom error handling, integrating OTP verification",
-        "Developed interfaces for multiple projects using HTML, CSS, Javascript which has improved my design principles.",
+        "Developed interfaces for multiple projects using HTML, CSS, Javascript which improved my design principles.",
       ],
       ref:ref2,
       timeline: " June'23 - August'23",

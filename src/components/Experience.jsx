@@ -121,7 +121,7 @@ const Experience = () => {
           <br></br>
 
           {/* vertical white line */}
-          <div className="h-[1650px] w-3 bg-white">
+          <div className="h-[1500px] w-3 bg-white">
             {projectItems.map((item, index) => (
               <div className="flex items-baseline mb-24" key={index}>
                 <motion.div

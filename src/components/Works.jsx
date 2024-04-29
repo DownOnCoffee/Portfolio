@@ -19,17 +19,25 @@ const Works = () => {
   const { scrollYProgress } = useScroll();
   
   const list = [
+   
     {
       title: "Patched",
       img: "images/patched.png",
       techstack: "ReactJs , CSS , Axios API , Material UI ",
       link:"https://dev.patched.tech/"
     },
+  
     {
       title: "Innergram",
       img: "/images/innergramss.png",
       techstack: "Typescript , DSA , ReactJs, NextUI , Tailwind ",
       link:"https://innergram.vercel.app/"
+    },
+    {
+      title: "SimplyChat",
+      img: "images/chatApp.png",
+      techstack: "NodeJs , Express , MongoDb , React , Socket.IO ",
+      link:"https://chatservice-0y62.onrender.com/"
     },
     
     {
