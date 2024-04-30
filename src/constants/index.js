@@ -56,13 +56,13 @@ import {
       id: "work",
       title: "Work",
       horzscroll:"0",
-      vertscroll:"4100"
+      vertscroll:"4280"
     },
     {
       id: "contact",
       title: "Contact",
       horzscroll:"0",
-      vertscroll:"6520"
+      vertscroll:"6670"
     },
   ];
   

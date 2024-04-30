@@ -39,7 +39,7 @@ const ExperienceMobile = () => {
       items:[
         "Began with a basic commercial website to grasp foundational MERN operations.",
         "Created Hotel booking application in just three days, showcasing swift development capabilities and developed other projects.",
-        "Currently,Trying to master MongoDb fundamentals."
+        "Currently, Trying to master MongoDb fundamentals."
       ],
       ref: ref5,
       timeline: "February'23",
@@ -63,7 +63,7 @@ const ExperienceMobile = () => {
       xValInitialDate: 15,
       direction: "right",
       xValViewText: 0,
-      xValInitialText: 15,
+      xValInitialText: 13,
       heading: "Personal React Projects:",
     },
     {
@@ -92,10 +92,10 @@ const ExperienceMobile = () => {
       timeline: "April'23 - June'23",
       view: " inView3",
       xValViewDate: 0,
-      xValInitialDate: -50,
+      xValInitialDate: 15,
       direction: "right",
       xValViewText: 0,
-      xValInitialText: -50,
+      xValInitialText: 13,
       heading: "First project as Frontend developer:",
     }
   ];
@@ -134,7 +134,7 @@ const ExperienceMobile = () => {
                 </motion.div><br></br>
 
                 <motion.div
-                  className={`flex-shrink-0 border-b-4 border-${ item.direction === "right" ? "r" : "l" }-4 bg-gray-900 p-7 w-[350px] rounded-xl leading-6`}
+                  className={`flex-shrink-0 border-b-4 border-${ item.direction === "right" ? "r" : "l" }-4 bg-gray-900 p-7 w-[280px] rounded-xl leading-6`}
                   ref={(item.ref)}
                   whileInView={{
                     x: (item.view)
@@ -147,7 +147,7 @@ const ExperienceMobile = () => {
                   <p className="font-bold text-white">{item.heading}</p>
                   <ul style={{ listStyle: "disc" }}>
                     {item.items.map((ele, idx) => (
-                      <li className="text-white" key={idx}>
+                      <li className="text-white text-[13.5px]" key={idx}>
                         {ele}
                       </li>
                     ))}
