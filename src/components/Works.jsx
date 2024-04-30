@@ -26,6 +26,12 @@ const Works = () => {
       techstack: "ReactJs , CSS , Axios API , Material UI ",
       link:"https://dev.patched.tech/"
     },
+    {
+      title: "SimplyChat",
+      img: "images/chatApp.png",
+      techstack: "NodeJs , Express , MongoDb , React , Socket.IO ",
+      link:"https://chatservice-0y62.onrender.com/"
+    },
   
     {
       title: "Innergram",
@@ -33,11 +39,12 @@ const Works = () => {
       techstack: "Typescript , DSA , ReactJs, NextUI , Tailwind ",
       link:"https://innergram.vercel.app/"
     },
+   
     {
-      title: "SimplyChat",
-      img: "images/chatApp.png",
-      techstack: "NodeJs , Express , MongoDb , React , Socket.IO ",
-      link:"https://chatservice-0y62.onrender.com/"
+      title: "Hotel Booking App (Admin)",
+      img: "images/hotelApp.png",
+      techstack: "MERN | Developed as a coding assignment",
+      link:"https://github.com/DownOnCoffee/Hotel-App?tab=readme-ov-file#hotel-management-application-demo"
     },
     
     {
