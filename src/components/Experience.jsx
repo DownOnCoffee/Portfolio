@@ -46,9 +46,10 @@ const Experience = () => {
   const projectItems = [
     {
       items:[
-        "Began with a commercial website using Node.js, Express.js, and MongoDB to grasp foundational MERN operations.",
-        "Developed hotel booking application in just three days, showcasing swift development capabilities.",
-        "Developed a chat service, highlighting my expertise in real-time communications, security protocols and development."
+        "Began with a basic commercial website to grasp foundational MERN operations.",
+        "Created Hotel booking application in just three days, showcasing swift development capabilities and developed other projects.",
+        "Currently,Trying to master MongoDb fundamentals."
+        
       ],
       ref: ref5,
       timeline: "February'23",
