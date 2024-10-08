@@ -48,7 +48,7 @@ const Experience = () => {
       items:[
         "Began with a basic commercial website to grasp foundational MERN operations.",
         "Created Hotel booking application in just three days, showcasing swift development capabilities and developed other projects.",
-        "Currently,Trying to master MongoDb fundamentals."
+        "Currently,Trying to master MySQL fundamentals."
         
       ],
       ref: ref5,
