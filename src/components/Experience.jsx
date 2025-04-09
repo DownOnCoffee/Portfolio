@@ -46,7 +46,7 @@ const Experience = () => {
   const projectItems = [
     {
       items:[
-        "Began with a basic commercial website to grasp foundational MERN operations.",
+        "Developed Full stack projects using MERN stack",
         "Created Hotel booking application in just three days, showcasing swift development capabilities and developed other projects.",
         "Currently,Trying to master MySQL fundamentals."
         
