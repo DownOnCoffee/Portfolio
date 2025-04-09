@@ -40,9 +40,9 @@ const Hero = () => {
               sequence={[
                 "Glad to have you here ;) ",
                 1000, 
-                "Skilled MERN Stack Developer💻",
+                "Working at HERE Tech, Mumbai 🚀",
                 1000,
-                "Available for work 📆",
+                "Looking for more oppurtunities 📆",
                 1000,
                 "Drop a feedback or contact me! 📬",
                 1000,
