@@ -52,7 +52,7 @@ const Experience = () => {
         
       ],
       ref: ref5,
-      timeline: "February'23",
+      timeline: "February'24",
       view: "inView5",
       xValViewDate: 50,
       xValInitialDate:0,
