@@ -86,7 +86,7 @@ const About = () => {
                 <div className=" flex flex-col gap-2 items-center mt-10 filter fill-transparent ">
                   <img src={expbadge}></img>
                   <h2 className=" text-white font-mono text-2xl font-semibold">Experience</h2>
-                  <p className="  font-Montserrat text-lg text-white text-center font-semibold">1.5 years</p>
+                  <p className="  font-Montserrat text-lg text-white text-center font-semibold">2 years</p>
                 </div>
               </motion.div>
 
